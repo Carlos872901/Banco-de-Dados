@@ -1,0 +1,15 @@
+-- Criação de tabela de pessoas --
+CREATE TABLE pessoas (
+  id INT PRIMARY KEY,
+  nome VARCHAR(100),
+  idade INT
+ );
+ -- Inserção de dados na tabela --
+ INSERT INTO pessoas (id, nome, idade) VALUES
+ 	(1345, 'Carlos', 30),
+    (2854, 'Túlio', 25),
+    (3963, 'Giovanna', 22);
+    
+    -- Consulta dos dados da tabela --
+    SELECT id, nome, idade
+    FROM pessoas;
