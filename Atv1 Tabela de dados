@@ -1,0 +1,17 @@
+-- Criação de Tabela --
+CREATE TABLE usuarios (
+  cpf INT PRIMARY KEY,
+  nome VARCHAR(100),
+  cidade VARCHAR(100),
+  idade INT
+  );
+  
+  -- Inserção de dados --
+  INSERT INTO usuarios (cpf, nome, cidade, idade) VALUES
+  	(01734556788, 'Carlos', 'Belo Horizonte', 22),
+  	(10220998754, 'Ana', 'Rio de Janeiro', 25),
+  	(78999084554, 'Giovanna', 'Belo Horizonte', 19);
+  
+ -- Consulta de dados da tabela --
+  SELECT cpf, nome, cidade, idade
+  FROM usuarios;
