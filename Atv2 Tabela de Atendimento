@@ -1,0 +1,17 @@
+CREATE TABLE Atendimento_medico (
+	nome_paciente VARCHAR(100),
+    id_paciente INT,
+    cpf INT(14),
+	especialização VARCHAR(100),
+	data_atendimento DATE,
+    nome_do_medico VARCHAR(100)
+);
+-- Inserção de dados --
+INSERT INTO Atendimento_medico (nome_paciente, id_paciente, cpf, especialização, data_atendimento, nome_do_medico)
+VALUES
+	('João Silva', 124, 158.925.854-74, 'Clínico Geral', '2025-01-10', 'Dra. Carla Sampaio'),
+    ('João Silva', 124, 158.925.854-74, 'Ortopedista', '2025-02-05', 'Dr. João Lima'),
+    ('Maria Souza', 264, 085.879.547-69, 'NUtrologa', '2025-03-12', 'Dra. Fernanda Castro'),
+    ('Ana Lima', 389, 558.021.589-00, 'Clinico Geral', '2025-01-15', 'Dr. Marcelo Santos'),
+    ('Ana Lima', 389, 558.021.589-00, 'Ginecologista', '2025-02-01', 'Dra. Carmem Ferreira'),
+    ('Ana Lima', 389, 558.021.589-00, 'Ortopedista', '2025-03-10', 'Dr. João Lima');
