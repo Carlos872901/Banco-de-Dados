@@ -1,0 +1,16 @@
+CREATE TABLE usuarios (
+CPF VARCHAR (14) PRIMARY KEY,
+NOME VARCHAR (100),
+EMAIL VARCHAR (100),
+SENHA VARCHAR (100)
+);
+-- Inserção de dados --
+INSERT INTO usuarios (CPF, NOME, EMAIL, SENHA)
+VALUES
+	('123.456.897-06', 'Samuel Lopes', 'samuel12@gmail.com', 'senha123'),
+    ('358.998.784-58', 'Carlos Silva', 'carlossilva45@yahoo.com.br', 'senha456'),
+    ('968.569.455-89','Júlia Souza', 'juju34@gmail.com', 'senha789'),
+    ('397.789.800-02', 'Camila Ferreira', 'cami_ferreira@outlook.com', 'senha321'),
+    ('657.967.348-16', 'Cleiton Rodrigues', 'cleito_rodri64@gmail.com', 'rodri654.'),
+    ('283.909.702-98', 'Daniel Lopes', 'daniellopes76@gmail.com', 'Dandan78'),
+    ('542.839.892-09', 'Monica Martins', 'monicamartinss87@gmail.com', 'monica9278');
