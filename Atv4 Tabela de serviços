@@ -1,0 +1,19 @@
+CREATE TABLE agendamento_serviços (
+	ID_AGENDAMENTO INT PRIMARY KEY AUTO_INCREMENT,
+	CPF_CLIENTE VARCHAR(14),
+	SERVIÇO VARCHAR(100),
+	DATA_AGENDAMENTO DATE,
+	HORA_AGENDAMENTO TIME,
+	OBSERVAÇÕES TEXT
+);
+
+-- Inserção de dados --
+INSERT INTO agendamento_serviços (CPF_CLIENTE, SERVIÇO, DATA_AGENDAMENTO, HORA_AGENDAMENTO, OBSERVAÇÕES)
+VALUES
+	('687.819.789-98', 'Consulta conta de luz', '2025-02-07', '11:00:00', 'Não terá ninguém em casa'),
+	('763.367.876-87', 'Consulta conta de água', '2025-08-14', '12:00:00', 'Irá ter gente em casa'),
+	('157.876.273-82', 'Troca de gás', '2025-09-03', '08:00:00', 'Trazer o galão de gás trocado'),
+	('872.908.729-85', 'Manutenção do carro', '2025-09-25', '12:00:00', 'O motor está com barulho estranho'),
+	('173.278.917-81', 'Manutenção da moto', '2025-02-12', '15:00:00', 'A moto está morrendo no morro'),
+	('625.718.918-56', 'Troca de óleo do carro', '2025-02-15', '15:00:00', 'Deixar o carro na casa do dono'),
+	('256.267.176-98', 'Lavar o carro', '2025-04-02', '13:30:00', 'Polir os faróis e passar cera no painel do carro');
