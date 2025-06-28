@@ -16,4 +16,7 @@ VALUES
 	('872.908.729-85', 'Manutenção do carro', '2025-09-25', '12:00:00', 'O motor está com barulho estranho'),
 	('173.278.917-81', 'Manutenção da moto', '2025-02-12', '15:00:00', 'A moto está morrendo no morro'),
 	('625.718.918-56', 'Troca de óleo do carro', '2025-02-15', '15:00:00', 'Deixar o carro na casa do dono'),
-	('256.267.176-98', 'Lavar o carro', '2025-04-02', '13:30:00', 'Polir os faróis e passar cera no painel do carro');
+	('256.267.176-98', 'Lavar o carro', '2025-04-02', '13:30:00', 'Polir os faróis e passar cera no painel do carro'),
+	('526.718.029-09', 'Lavar o moto', '2025-05-02', '13:35:00', 'Polir os faróis'),
+	('862.910.763-98', 'Lavar uma caminhonete', '2025-11-12', '10:30:00', 'Lavar toda a caminhonete por cima e por baixo'),
+	('716.718.729-09', 'Polir os faróis do carro', '2025-11-04', '15:35:00', 'Polir os faróis com cuidado pois o carro e antigo');
