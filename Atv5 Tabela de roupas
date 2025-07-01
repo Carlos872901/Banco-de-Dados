@@ -1,0 +1,38 @@
+CREATE TABLE roupas (
+TIPO VARCHAR(100),
+TAMANHO VARCHAR(100),
+COR VARCHAR(100),
+MARCA VARCHAR(100),
+PREÇO VARCHAR(100),
+ESTOQUE INT
+);
+ -- Inserção de dados --
+INSERT INTO roupas (TIPO, TAMANHO, COR, MARCA, PREÇO, ESTOQUE)
+VALUES
+('Blusa de frio', 'GG', 'Preta', 'Nike', 'R$ 150,00', '20'),
+('Camiseta', 'M', 'Branca', 'Adidas', 'R$ 80,00', '5'),
+('Calça Jeans', 'G', 'Azul', 'Lacoste', 'R$ 100,00', '10');
+
+
+ESSA PARTE E NO VS CODE
+
+import mysql.connector
+
+conexao = mysql.connector.connect(
+    host = "localhost",
+    port = 3306,
+    user = "root",
+    password = "aluno",
+    database = "proz"
+)
+
+cursor = conexao.curso()
+
+cursor.execute("SELECT * FROM roupas")
+resultados = cursor.fetchall()
+
+for linha in resultados:
+    print(linha)
+
+cursor.close()
+conexao.close()
