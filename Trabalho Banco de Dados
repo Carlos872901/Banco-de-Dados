@@ -1,0 +1,47 @@
+CREATE TABLE cursos (
+    titulo VARCHAR(100),
+    descricao VARCHAR(255),
+    categoria VARCHAR(100),
+    duracao_horas INT,
+    nivel VARCHAR(100),
+    preco DECIMAL(10, 2) 
+);
+
+INSERT INTO cursos (titulo, descricao, categoria, duracao_horas, nivel, preco)
+VALUES
+('Desenvolvedor de sistemas', 'Foco no Python', 'Python', '40', 'Iniciante', 250.00),
+('Banco de dados', 'Foco no MySQL', 'MySQL', '45', 'Iniciante', 270.00),
+('Enfermagem', 'Foco no básico da enfermagem', 'Enfermagem simples', '55', 'Iniciante', 500.00),
+('Educação Física', 'Focado em aprender a dar aula', 'Esportes', '100', 'Iniciante', 300.00),
+('Nutricionista', 'Foco na nutrição', 'Nutrição alimentar', '120', 'Básico', 180.00);
+
+CREATE TABLE instrutores(
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    telefone VARCHAR(30),
+    especialidade VARCHAR(100)
+);
+
+INSERT INTO instrutores (nome, email, telefone, especialidade)
+VALUES
+('Giovanna Alves', 'GiovannaAlves76@gmail.com', '(31) 987290807', 'Nutricionista'),
+('Carlos Eduardo', 'Carloseduarodms276@gmail.com', '(31) 9889287267', 'Operador de maquinas'),
+('Daniel Lopes', 'Daniellopes829@gmail.com', '(31) 982348761', 'Desenvolvedor de sistemas'),
+('Gabriela Alves', 'GabiAlves27Alves27@gmail.com', '(21) 987250204', 'Professora'),
+('Andressa Martins', 'Andressamartins562@gmail.com', '(32) 988912573', 'Gerente de produção');
+
+CREATE TABLE inscritos (
+    nome_aluno VARCHAR(100),
+    email_aluno VARCHAR(100),
+    id_curso INT,
+    data_inscricao DATE,
+    status_curso VARCHAR(100)
+);
+
+INSERT INTO inscritos (nome_aluno, email_aluno, id_curso, data_inscricao, status_curso)
+VALUES
+('Cleiton Nunes', 'cleitonnunes81@gmail.com', '176', '2025-01-03', 'Concluido'),
+('Claudio Lopes', 'claudiolopes17@gmail.com', '176', '2025-02-07', 'Concluido'),
+('Carla Martins', 'carlamartins21@gmail.com', '190', '2025-04-03', 'Cancelado'),
+('Otavio Nunes', 'otavionunes81@gmail.com', '812', '2025-04-12', 'Cancelado'),
+('Victor Silva', 'victorsilvaff@gmail.com', '415', '2025-07-11', 'Em andamento');
